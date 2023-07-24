@@ -1,0 +1,50 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>title</title>
+  <style>
+    .container {
+      display: grid;
+      padding: 10px;
+      grid-template-columns: auto auto auto;
+      gap: 10px 10px;
+      background-color: rgb(132, 56, 56);
+    }
+
+    .container > div {
+      background-color: rgb(64, 64, 136);
+      padding: 10px;
+    }
+
+    .in {
+      display: grid;
+      padding: 10px;
+      grid-template-columns: auto auto auto;
+      gap: 10px 10px;
+    }
+
+    .in > div {
+      background-color: white;
+      padding: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="in">
+      <div class="nested"> 
+        <a href="/raw-sketch.html">nested div</a> 
+      </div>
+      <div class="nested"> nested div </div>
+      <div class="nested"> nested div </div>
+    </div>
+    <div class="in">
+      <div class="nested-two"> nested div </div>
+      <div class="nested-two"> nested div </div>
+      <div class="nested-two"> nested div </div>      
+    </div>
+  </div>
+</body>
+</html>
