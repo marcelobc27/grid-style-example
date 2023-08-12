@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,17 +9,17 @@ body {
   background-color: lightgray;
 }
 
-/*Header starts here*/
+/*Header styles start here*/
 
-.topbar-main{
+.topbar-main {
   width: 100%;
-  background-color: #1E2024;
+  background-color: #1e2024;
 }
 
-.topbar .list{
+.topbar .list {
   display: grid;
   padding: 10px;
-  background-color: #1E2024;
+  background-color: #1e2024;
   color: #6c757d;
   grid-template-columns: 180px 100px 80px 60px;
   gap: 10px 10px;
@@ -29,64 +29,81 @@ body {
   font-size: 14px;
 }
 
-.topbar .list > .item{
+.topbar .list > .item {
   border-right: 1px solid #6c757d;
   margin-right: 5px;
 }
 
-/*Header ends here*/
+/*Header styles end here*/
 
-/*logo starts here*/
-.logo-text{
+/*logo styles start here*/
+.logo-text {
   font-family: Arial;
   font-weight: bolder;
-  color: #750C8A;
+  color: #750c8a;
 }
 
-.logo-subtext{
+.logo-subtext {
   font-family: "Montserrat", sans-serif;
-  color: #6C757D;
+  color: #6c757d;
 }
 
-.logo-area{
+.logo-area {
   width: 100%;
-  background-color: #FFF;
+  background-color: #fff;
   height: 120px;
 }
 
-.logo-wrapper{
+.logo-wrapper {
   width: 1180px;
   margin: auto;
   font-size: 50px;
 }
 
-/*logo ends here*/
+/*logo styles end here*/
 
-.menu{
+/*Menu styles start here*/
+
+.menu {
   width: 100%;
-  background-color: #1E2024;
+  background-color: #1e2024;
 }
 
-.menu .menu-list{
+.menu .menu-list {
   display: grid;
   padding: 20px;
-  background-color: #1E2024;
-  color: #FFF;
+  background-color: #1e2024;
+  color: #fff;
   font-weight: 10px;
   grid-template-columns: 80px 100px 130px 120px 100px 400px;
   gap: 10px 10px;
   width: 1200px;
   margin: auto;
   font-family: "Montserrat", sans-serif;
-  font-size: 16px; 
+  font-size: 16px;
 }
 
-.menu .menu-list > .item{
+.menu .menu-list > .item {
   margin-right: 5px;
 }
 
-.item:hover{
-  color: #750C8A;
+.item:hover {
+  color: #750c8a;
   cursor: pointer;
 }
 
+/*Menu styles end here*/
+
+/*Grid 1 styles start*/
+
+.main-0-outer{
+  width: 100%;
+}
+
+.main-1{
+  display: grid;
+  background-color: beige;
+  grid: 200px 200px auto/auto auto auto auto auto;
+}
+
+/*Grid 1 styles end*/
