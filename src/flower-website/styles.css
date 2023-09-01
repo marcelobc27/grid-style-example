@@ -1,0 +1,52 @@
+body, h1, p, ul, li, blockquote {
+  padding: 0px;
+}
+
+body{
+  font-family: "satisfy", Georgia, 'Times New Roman', Times, serif;
+}
+
+li {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100px;
+}
+
+/*General Grid*/
+
+.structure{
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) 3fr 300px;
+  grid-template-areas: 
+    "header header header"
+    "sidenav content ads"
+    "footer footer footer"
+  ;
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidenav {
+  grid-area: sidenav;
+}
+
+.content {
+  grid-area: content;
+}
+
+.ads {
+  grid-area: ads;
+}
+
+.footer {
+  grid-area: footer;
+}
+

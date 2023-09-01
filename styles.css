@@ -1,0 +1,24 @@
+.container {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: auto auto auto;
+  gap: 10px 10px;
+  background-color: rgb(132, 56, 56);
+}
+
+.container > div {
+  background-color: rgb(64, 64, 136);
+  padding: 10px;
+}
+
+.in {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: auto auto auto;
+  gap: 10px 10px;
+}
+
+.in > div {
+  background-color: white;
+  padding: 10px;
+}
