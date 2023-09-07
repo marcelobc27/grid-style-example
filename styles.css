@@ -1,24 +1,25 @@
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: bisque;
+}
+
 .container {
   display: grid;
   padding: 10px;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 10px 10px;
   background-color: rgb(132, 56, 56);
-}
-
-.container > div {
-  background-color: rgb(64, 64, 136);
-  padding: 10px;
 }
 
 .in {
   display: grid;
   padding: 10px;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row: span 4;
   gap: 10px 10px;
 }
 
 .in > div {
-  background-color: white;
-  padding: 10px;
+  color: white;
 }

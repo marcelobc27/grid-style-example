@@ -1,4 +1,5 @@
-body, h1, p, ul, li, blockquote {
+* {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -65,12 +66,8 @@ img {
 }
 
 @media(max-width: 760px){
-  html{
-    width: 100vw;
-    overflow-x: hidden;
-  }
   .structure{
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
     grid-template-areas: 
       "header"
       "sidenav"
@@ -81,10 +78,28 @@ img {
   }
 }
 
+@media(max-width: 400px){
+  .structure{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "header"
+      "sidenav"
+      "content"
+      "ads"
+      "footer"
+    ;
+  }
+  .content{
+    grid-template-columns: 1fr;
+  }
+  .flowers-content {
+    grid-template-columns: 1fr;  
+  }
+}
+
 /*Header*/
 
 .header {
-  overflow-wrap: break-word;
   grid-area: header;
   width: 100%;
   background: linear-gradient(135deg, #42a832, #6fa832);
@@ -194,7 +209,7 @@ img {
 
 .content {
   grid-area: content;
-  max-width: 900px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 30px;
   display: grid;
@@ -204,7 +219,7 @@ img {
 
 @media(max-width: 600px){
   .content {
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
   }
 }
 
